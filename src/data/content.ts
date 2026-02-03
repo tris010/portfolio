@@ -1,0 +1,133 @@
+export const content = {
+    profile: {
+        name: "Avani Khemka",
+        role: "Computer Science Engineering Student (AI)",
+        headline: "Curious and adaptable learner interested in AI-ML and Cybersecurity.",
+        bio: "I am a B.Tech student in Computer Science Engineering (AI) at JECRC Foundation with a CGPA of 8.94. I am excited to be part of a team where I can contribute meaningfully and build real-world skills. My focus areas include Machine Learning, Operating Systems, Data Structures, and Computer Networks.",
+        email: "avanikhemka23@gmail.com",
+        location: "Jaipur, Raj",
+        socials: {
+            github: "https://github.com/tris010",
+            linkedin: "https://linkedin.com/in/avanikhemka",
+            phone: "+919155915712",
+        },
+    },
+    education: [
+        {
+            institution: "JECRC Foundation",
+            degree: "B.Tech in Computer Science Engineering (AI)",
+            period: "2022 – 2026",
+            score: "8.94 CGPA",
+        },
+        {
+            institution: "Vikas Vidyalaya, Ranchi",
+            degree: "Senior Secondary Education",
+            period: "2021",
+            score: "95.8%",
+        },
+        {
+            institution: "Holy Mission School, Bihar",
+            degree: "Secondary Education",
+            period: "2019",
+            score: "91.6%",
+        },
+    ],
+    experience: [
+        {
+            company: "PwC Launchpad",
+            role: "Trainee",
+            period: "Mar 2025 - Jun 2025",
+            description: "Selected for PwC’s 18-week Launchpad Program via AI-proctored exam. Focused on technology, cybersecurity, and AI. Completed micro-certifications in Python, Cybersecurity, and Prompt Engineering.",
+        },
+        {
+            company: "Upflairs",
+            role: "Embedded Systems & Robotics Trainee",
+            period: "Aug 2023",
+            description: "Completed a 15-day live training covering core concepts and applications of Embedded Systems and Robotics. Gained hands-on experience in automation, embedded tech, and system design through virtual sessions.",
+        },
+    ],
+    projects: [
+        {
+            id: "automated-recruitment-system",
+            title: "Automated Recruitment System",
+            shortDescription: "AI-powered resume screening and interview scheduling system.",
+            tags: ["Python", "FastAPI", "SQLite", "NLP", "TF-IDF"],
+            link: "",
+            github: "https://github.com/tris010/recruitment-system",
+            image: "/projects/recruitment-mockup.png",
+            role: "Full Stack Developer & ML Engineer",
+            problem: "Manual screening of resumes is time-consuming and prone to bias, making the recruitment process inefficient.",
+            solution: "Developed an automated system using NLP to extract and screen resumes. Trained ML models to score relevance based on job descriptions and integrated Google Calendar API for auto-scheduling interviews.",
+            metrics: "Streamlined resume screening and automated interview timeline management.",
+            techStack: ["Python", "Natural Language Processing (NLP)", "MongoDB", "Google Calendar API"],
+        },
+        {
+            id: "travel-discovery-platform",
+            title: "Travel Discovery Platform (HackQuest)",
+            shortDescription: "Award-winning travel website built for Smart India Hackathon.",
+            tags: ["Web Development", "Team Leadership", "UI/UX"],
+            link: "/demo/travel-platform",
+            github: "https://github.com/tris010",
+            image: "/projects/travel-new.png",
+            role: "Team Lead",
+            problem: "Travelers struggle to find curated, reliable travel itineraries and bookings in a single platform.",
+            solution: "Led a 6-member team to build a comprehensive travel website. The platform features curated destinations and booking capabilities.",
+            metrics: "Secured Top 50 out of 170+ teams in HackQuest college hackathon. Qualified for Smart India Hackathon (SIH) national submission.",
+            techStack: ["HTML/CSS", "JavaScript", "React" /* Inferred from modern web dev */, "Node.js"],
+        },
+        {
+            id: "ml-ds-analysis",
+            title: "Machine Learning Analysis",
+            shortDescription: "Implementation of various ML algorithms including SVM, DT, and Clustering.",
+            tags: ["Machine Learning", "Python", "Data Science", "SVM", "Decision Trees"],
+            link: "",
+            github: "https://github.com/tris010",
+            image: "/projects/ml-new.png",
+            role: "Data Scientist",
+            problem: "Understanding and applying core machine learning algorithms to real-world datasets.",
+            solution: "Implemented and analyzed performance of algorithms including Support Vector Machines (SVM), Decision Trees (DT), Naive Bayes (NB), Clustering, GMM, and FP-Growth.",
+            metrics: "Certified in ML and DS by Geeks for Geeks.",
+            techStack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+        },
+        {
+            id: "job-application-tracker",
+            title: "Job Application Tracker",
+            shortDescription: "A CLI/GUI based system to track job application statuses using Python and SQLite.",
+            tags: ["Python", "SQLite", "Automation"],
+            link: "",
+            github: "https://github.com/tris010/job-application-tracker",
+            image: "/projects/tracker-mockup.png",
+            role: "Solo Developer",
+            problem: "Managing multiple job applications via spreadsheets is manual and prone to errors.",
+            solution: "Built a persistent tracking system using Python and SQLite to store application details and status (Applied, Interview, Offer). Features include adding jobs, viewing statuses, and simple management.",
+            metrics: "Efficiently manages application records with status tracking.",
+            techStack: ["Python", "SQLite"],
+        }
+    ],
+    skills: {
+        technical: ["C", "C++", "Python", "SQL"],
+        tools: ["VS Code", "Jupyter Notebook", "ServiceNow", "Hackerrank", "Leetcode"],
+        core: ["Machine Learning", "Operating Systems", "Data Structures", "Computer Networks"],
+        soft: ["Adaptability", "Time Management", "Leadership", "Collaboration"],
+        languages: ["English", "Hindi", "German"],
+    },
+    certifications: [
+        {
+            name: "Certified Application Developer",
+            issuer: "ServiceNow",
+            date: "Jun 2025",
+        },
+        {
+            name: "Certified System Administrator",
+            issuer: "ServiceNow",
+            date: "Apr 2025",
+        },
+        {
+            name: "Certified in ML and DS",
+            issuer: "Geeks for Geeks",
+            date: "Feb 2025",
+        },
+    ]
+};
+
+export type Content = typeof content;

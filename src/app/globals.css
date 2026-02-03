@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --radius-lg: 1.5rem;
+  --radius-md: 1rem;
+  --radius-sm: 0.5rem;
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Colorful / Cutesy Light Theme */
+    --background: 330 100% 99%;
+    /* Very pale pinkish white */
+    --foreground: 280 10% 20%;
+    /* Dark slate, softer than black */
+    --card: 0 0% 100%;
+    --card-foreground: 280 10% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 10% 20%;
+
+    --primary: 320 80% 60%;
+    /* Vibrant Hot Pink */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 260 100% 96%;
+    /* Light Lavender */
+    --secondary-foreground: 320 80% 60%;
+
+    --muted: 260 50% 96%;
+    --muted-foreground: 280 5% 50%;
+
+    --accent: 190 90% 50%;
+    /* Cyan/Aqua pop */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 320 20% 90%;
+    --input: 320 20% 90%;
+    --ring: 320 80% 60%;
+    --radius: 1.5rem;
+    /* Rounder corner radius */
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
+    /* Tiny Prints / Dot Pattern Texture - Subtle Pink/Lavender Dots */
+    background-image: radial-gradient(hsla(var(--primary) / 0.15) 1.5px, transparent 1.5px), radial-gradient(hsla(var(--secondary-foreground) / 0.1) 1.5px, transparent 1.5px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+  }
+
+  /* Ensure content stays readable by blending the pattern or using a pseudo-element if needed. 
+     For now, applying directly to body but with very low opacity dots via color definition or separate blend mode might be tricky.
+     Let's adjust the dot color opacity directly in the gradient for subtlety. */
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Subtle Grain/Noise Texture */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: -1;
+  }
 }
