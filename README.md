@@ -1,59 +1,69 @@
-# Avani Khemka - Engineering Portfolio
+# 🌐 Avani Khemka – Engineering Portfolio
 
-A modern, high-performance engineering portfolio built with **Next.js 14**, **TypeScript**, and **Framer Motion**. Designed to showcase technical depth in AI/ML, Embedded Systems, and Full Stack Development.
+🔗 **Live Portfolio:** https://portfolio-one-avani.vercel.app/  
+🐙 **GitHub:** https://github.com/tris010  
+💼 **LinkedIn:** https://linkedin.com/in/avanikhemka  
 
-## 🚀 Tech Stack
+---
 
-- **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
-- **Language:** TypeScript
-- **Styling:** CSS Modules + Vanilla CSS (Engineer's choice for control)
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
+This repository contains the source code for my **personal engineering portfolio website**, built to showcase my work as a **Computer Science & Artificial Intelligence engineer**.
 
-## 🛠️ Features
+The live, deployed version can be viewed here:  
+👉 https://portfolio-one-avani.vercel.app/
 
-- **Recruiter Optimized:** Clean information architecture focused on skills and impact.
-- **Deep Case Studies:** Detailed project pages with problem statements, architecture, and metrics.
-- **Performance First:** SEO optimized, fast load times with Next.js optimization.
-- **Responsive:** Mobile-first design that scales exclusively to large screens.
+---
 
-## 📦 Deployment (Vercel)
+## 👩‍💻 About Me
 
-The easiest way to check the live version is to use Vercel.
+I am a final-year **B.Tech Computer Science (AI)** student with strong interests in **Machine Learning, Data Science, and software engineering**.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftris010%2Fportfolio)
+I focus on building **practical, real-world systems**—from automation platforms to ML-driven solutions—while maintaining clean code, clarity, and impact.
 
-### Manual Deployment Steps
+---
 
-1. Go to [Vercel.com](https://vercel.com) and sign up/login.
-2. Click **"Add New"** > **"Project"**.
-3. Select this repository (`tris010/portfolio`).
-4. Click **"Deploy"**.
-5. Vercel will auto-detect Next.js and build the site.
+## 🚀 What This Portfolio Showcases
 
-### 🌐 Customizing the URL (Professional Domain)
+- Real engineering projects with practical use cases  
+- AI & Machine Learning applications  
+- System design and problem-solving approach  
+- Leadership experience from national-level hackathons  
 
-To change the default `.vercel.app` URL to something more professional:
+### Featured Projects
+- **AI-Based Recruitment Automation System** (SIH 2024 – DRDO use case)  
+- **Job Application Tracker**  
+- **Travel Discovery Platform** (SIH 2023)  
+- **Anomaly Detection using Sensor Data**  
 
-1. Go to your **Vercel Dashboard** -> Select this Project.
-2. Click on **Settings** -> **Domains**.
-3. **Option A (Free):** Click "Edit" on the default domain and change it to `avani-khemka.vercel.app` (or similar).
-4. **Option B (Recommended):** Buy a custom domain (e.g., `avanikhemka.com`) from GoDaddy/Namecheap and add it here. Vercel will guide you through the DNS setup.
+Each project highlights the problem, solution approach, and technologies used.
 
-## 💻 Running Locally
+---
 
-First, ensure you have Node.js installed.
+## 🛠 Tech Stack
+
+- **Frontend:** React / Next.js  
+- **Backend:** Node.js  
+- **Machine Learning:** Python, classical ML algorithms  
+- **Tools & Platforms:** GitHub, Vercel, ServiceNow  
+- **Other:** Embedded Systems fundamentals  
+
+---
+
+## 📂 Repository Overview
+
+This repository contains:
+- Portfolio website source code
+- Reusable UI components
+- Project and experience sections
+- Configuration and deployment setup
+
+---
+
+## ▶️ Run Locally
+
+If you want to run this portfolio locally:
 
 ```bash
-# Install dependencies
+git clone https://github.com/tris010/portfolio
+cd portfolio
 npm install
-
-# Run the development server
 npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📝 License
-
-Verified by Avani Khemka.
