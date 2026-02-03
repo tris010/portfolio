@@ -37,9 +37,6 @@ export default function ResumePage() {
                         <h1 className="text-4xl font-bold uppercase tracking-wide mb-2 text-neutral-900">{profile.name}</h1>
                         <div className="flex flex-wrap gap-4 text-sm text-neutral-600 font-medium">
                             <div className="flex items-center gap-1">
-                                <Phone size={14} /> {profile.socials.phone}
-                            </div>
-                            <div className="flex items-center gap-1">
                                 <Mail size={14} /> {profile.email}
                             </div>
                             <div className="flex items-center gap-1">
@@ -87,20 +84,17 @@ export default function ResumePage() {
                     <section className="mb-6">
                         <h2 className="text-lg font-bold uppercase border-b border-neutral-300 mb-3 pb-1">Skills</h2>
                         <div className="text-sm grid grid-cols-[140px_1fr] gap-y-2">
-                            <span className="font-bold">Technical Skills:</span>
-                            <span>{skills.technical.join(", ")}</span>
+                            <span className="font-bold">Languages:</span>
+                            <span>{skills.languages.join(", ")}</span>
+
+                            <span className="font-bold">Machine Learning & AI:</span>
+                            <span>{skills.ml_ai.join(", ")}</span>
 
                             <span className="font-bold">Tools & Platforms:</span>
                             <span>{skills.tools.join(", ")}</span>
 
-                            <span className="font-bold">Core Subjects:</span>
-                            <span>{skills.core.join(", ")}</span>
-
-                            <span className="font-bold">Soft Skills:</span>
-                            <span>{skills.soft.join(", ")}</span>
-
-                            <span className="font-bold">Languages:</span>
-                            <span>{skills.languages.join(", ")}</span>
+                            <span className="font-bold">Core Domains:</span>
+                            <span>{skills.domains.join(", ")}</span>
                         </div>
                     </section>
 
