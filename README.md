@@ -31,6 +31,15 @@ The easiest way to check the live version is to use Vercel.
 4. Click **"Deploy"**.
 5. Vercel will auto-detect Next.js and build the site.
 
+### 🌐 Customizing the URL (Professional Domain)
+
+To change the default `.vercel.app` URL to something more professional:
+
+1. Go to your **Vercel Dashboard** -> Select this Project.
+2. Click on **Settings** -> **Domains**.
+3. **Option A (Free):** Click "Edit" on the default domain and change it to `avani-khemka.vercel.app` (or similar).
+4. **Option B (Recommended):** Buy a custom domain (e.g., `avanikhemka.com`) from GoDaddy/Namecheap and add it here. Vercel will guide you through the DNS setup.
+
 ## 💻 Running Locally
 
 First, ensure you have Node.js installed.
