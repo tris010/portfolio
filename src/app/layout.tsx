@@ -13,8 +13,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Developer & Designer",
-  description: "Personal portfolio showcasing projects and skills.",
+  title: "Avani Khemka | AI & ML Engineer",
+  description: "Portfolio of a Computer Science & AI Engineer specializing in Machine Learning, Embedded Systems, and Scalable Web Development.",
 };
 
 export default function RootLayout({
