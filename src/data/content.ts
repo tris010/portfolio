@@ -72,7 +72,7 @@ export const content = {
         },
         {
             id: "travel-platform",
-            title: "Underrated Destinations Platform",
+            title: "ghumogaon",
             shortDescription: "Award-winning travel discovery engine for SIH 2023.",
             tags: ["React", "Node.js", "System Design"],
             link: "/demo/travel-platform",
