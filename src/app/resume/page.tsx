@@ -30,7 +30,7 @@ export default function ResumePage() {
                 </div>
 
                 {/* Resume Paper - Print optimized */}
-                <div className="w-full max-w-[210mm] bg-white text-black p-8 md:p-12 shadow-2xl overflow-hidden print:shadow-none print:w-full print:max-w-none print:p-0">
+                <div id="resume-content" className="w-full max-w-[210mm] bg-white text-black p-8 md:p-12 shadow-2xl overflow-hidden print:shadow-none print:w-full print:max-w-none print:p-0">
 
                     {/* Header */}
                     <header className="border-b-2 border-neutral-800 pb-6 mb-6">
@@ -157,6 +157,14 @@ export default function ResumePage() {
               }
               #resume-content, #resume-content * {
                 visibility: visible;
+              }
+              #resume-content {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin: 0;
+                padding: 0;
               }
               header, footer, nav, button {
                 display: none !important;
