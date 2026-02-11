@@ -21,7 +21,7 @@ export function About() {
                             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl transform rotate-6 opacity-20" />
                             <div className="absolute inset-0 bg-card border rounded-2xl flex items-center justify-center shadow-xl overflow-hidden">
                                 <Image
-                                    src="/profile.jpg"
+                                    src="/images/profile.jpg"
                                     alt="About Me"
                                     fill
                                     className="object-cover"
